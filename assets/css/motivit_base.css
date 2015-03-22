@@ -1,0 +1,461 @@
+/*Basic CSS*/
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+html {
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+body {
+	margin: 0;
+	/*font-family: 'Walkway Bold', sans-serif;*/
+	/*font-family: 'Montserrat 400', sans-serif;*/
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.42857143;
+	color: #333;
+	background-color: #fff;
+}
+
+/*@font-face {
+	font-family: 'Walkway Bold';
+	src: url('../fonts/Walkway_Bold-webfont.eot');
+	src: url('../fonts/Walkway_Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Walkway_Bold-webfont.woff') format('woff'), url('../fonts/Walkway_Bold-webfont.ttf') format('truetype'), url('../fonts/Walkway_Bold-webfont.svg') format('svg');
+}*/
+
+@font-face {
+	font-family: 'Walkway UltraBold';
+	src: url('../fonts/Walkway_UltraBold-webfont.eot');
+	src: url('../fonts/Walkway_UltraBold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Walkway_UltraBold-webfont.woff') format('woff'), url('../fonts/Walkway_UltraBold-webfont.ttf') format('truetype'), url('../fonts/Walkway_UltraBold-webfont.svg') format('svg');
+}
+
+
+/*Navbar CSS*/
+@media (max-width:991px){
+	.fixed-nav-bar {
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  z-index: 9999;
+	  width: 100%;
+	  height: 50px;
+	  background-color: #0E1522;
+	}
+
+	.fixed-nav-bar img{
+	  padding:0px;
+	  margin:5px 0px 5px 10px;
+	}
+
+	img .menu_icon{
+	  padding:0px;
+	  margin:0px 0px 0px 0px;
+	}
+
+	.navbar_left{
+		display:none;
+	}
+	
+	.navbar_right{
+		display:none;
+	}
+	
+	.navbar_left_alt{
+		width:100px;
+		float:left;
+		margin-left:5px;
+	}
+
+	.navbar_right_alt{
+		width:100px;
+		float:right;
+		margin:0px 0px 5px 0px;
+	}
+
+	.header_nav_link{
+		text-decoration:none;
+		color:#FFFFFF;
+		font-size: 24px;
+		margin:5px 50px 5px 0;
+	}
+
+	/*Link CSS*/
+	a.header_nav_link {
+	  color: #FFFFFF;
+	  text-decoration: none;
+	  font-family:'Walkway UltraBold', sans-serif;
+	}
+	a.header_nav_link:hover,
+	a.header_nav_link:focus {
+	  color: #21CE99;
+	  text-decoration: underline;
+	}
+	a.header_nav_link:focus {
+	  outline: thin dotted;
+	  outline: 5px auto -webkit-focus-ring-color;
+	  outline-offset: -2px;
+	}
+
+	/*Slideout Menu CSS*/
+	.slideout-menu {
+		position: fixed;
+		top: 0;
+		left: -250px;
+		width: 250px;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.8);
+		margin-top:50px;
+		z-index: 100;
+    }
+    .slideout-menu h3 {
+		position: relative;
+		padding: 12px 10px;
+		color: #fff;
+		font-size: 1.2em;
+		font-weight: 400;
+		border-bottom: 4px solid #222;
+    }
+    .slideout-menu .slideout-menu-toggle {
+		position: absolute;
+		top: 12px;
+		right: 10px;
+		display: inline-block;
+		padding: 6px 9px 5px;
+		font-family: Arial, sans-serif;
+		font-weight: bold;
+		line-height: 1;
+		background: #222;
+		color: #999;
+		text-decoration: none;
+		vertical-align: top;
+    }
+    .slideout-menu .slideout-menu-toggle:hover {
+		color: #fff;
+    }
+    .slideout-menu ul {
+		list-style: none;
+		font-weight: 300;
+		font-size:20px;
+		border-top: 1px solid #151515;
+		border-bottom: 1px solid #454545;
+		margin-left:-35px;
+    }
+    .slideout-menu ul li {
+		border-top: 1px solid #454545;
+		border-bottom: 1px solid #151515;
+    }
+    .slideout-menu ul li a {
+		position: relative;
+		display: block;
+		padding: 10px;
+		color: #FFFFFF;
+		text-decoration: none;
+    }
+    .slideout-menu ul li a:hover {
+		background: #000;
+		color: #fff;
+    }
+    .slideout-menu ul li a i {
+		position: absolute;
+		top: 15px;
+		right: 10px;
+		opacity: .5;
+    }
+}
+
+@media (min-width:992px){
+	.fixed-nav-bar {
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  z-index: 9999;
+	  width: 100%;
+	  height: 50px;
+	  background-color: #0E1522;
+	}
+
+	.fixed-nav-bar img{
+	  padding:0px;
+	  margin:5px 0px 5px 50px;
+	}
+
+	img .menu_icon{
+	  padding:0px;
+	  margin:5px 0px 0px 0px;
+	}
+
+	.navbar_left_alt, .navbar_right_alt, .slideout-menu{
+		display:none;
+	}
+	
+	.navbar_left{
+		width:100px;
+		float:left;
+	}
+	
+	.navbar_right{
+		width:700px;
+		float:right;
+		margin:10px 0px 5px 0px;
+	}
+
+	.header_nav_link{
+		text-decoration:none;
+		color:#FFFFFF;
+		font-size: 24px;
+		margin:5px 50px 5px 0;
+	}
+
+	/*Link CSS*/
+	a.header_nav_link {
+	  color: #FFFFFF;
+	  text-decoration: none;
+	  font-family:'Walkway UltraBold', sans-serif;
+	}
+	a.header_nav_link:hover,
+	a.header_nav_link:focus {
+	  color: #21CE99;
+	  text-decoration: underline;
+	}
+	a.header_nav_link:focus {
+	  outline: thin dotted;
+	  outline: 5px auto -webkit-focus-ring-color;
+	  outline-offset: -2px;
+	}
+}
+
+/*Footer Links*/
+a.footer_link{
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family:'Walkway UltraBold', sans-serif;
+}
+a.footer_link:hover,
+a.footer_link:focus {
+  color: #21CE99;
+  text-decoration: underline;
+}
+a.footer_link:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+/*Text Elements*/
+h3{
+	font-size:36px;
+}
+
+.light{
+	color:#FFFFFF;
+}
+
+.light_muted{
+	color:#21CE99;
+}
+
+
+.center{
+	text-align:center;
+}
+
+.centering{
+	left:50%;
+}
+
+.footer_text{
+	font-size:16px;
+	color:#FFFFFF;
+	font-family:'Walkway UltraBold', sans-serif;
+}	
+
+/*Body Container CSS*/
+#body_container{
+	width:100%;
+	height:100%;
+	margin-top:50px;
+}
+
+
+/*Body Elements CSS*/
+.intro_pane{
+	height:calc(100vh - 50px);
+	width:100%;
+}
+
+@media (min-width:992px){
+	.intro_pane_content{
+		width:800px;
+		position:absolute;
+		top:50%;
+		left:50%;
+		margin-top:-10vh;
+		margin-left:-400px;
+		text-align:center;
+	}
+
+	.intro_pane_content_mob{
+		display:none;
+	}
+	
+	h3.sub_brand{
+		font-family:'Montserrat', sans-serif;
+		font-weight:400;
+		font-size:28px;
+		color:#FFFFFF;
+	}
+
+	h3.brand{
+		font-family:'Walkway UltraBold', sans-serif;
+		color:#21CE99;
+		font-size:36px;
+	}
+	
+	p.page_text{
+		font-size:20px;
+		margin:30px 0px 30px 0px;
+	}
+}
+
+@media (max-width:991px){
+	.intro_pane_content_mob{
+		width:250px;
+		position:absolute;
+		top:50%;
+		left:50%;
+		margin-top:-10vh;
+		margin-left:-125px;
+		text-align:center;
+	}
+	
+	.intro_pane_content{
+		display:none;
+	}
+	
+	h3.brand{
+	font-family:'Walkway UltraBold', sans-serif;
+	color:#21CE99;
+	font-size:36px;
+	}
+	
+	h3.sub_brand{
+	font-family:'Montserrat', sans-serif;
+	font-weight:400;
+	font-size:28px;
+	color:#FFFFFF;
+	}
+	
+	p.page_text{
+	font-size:20px;
+	margin:30px 0px 30px 0px;
+	}
+}
+
+
+ 
+.pro_svc{
+	margin-top:0px;
+	height:calc(100vh - 50px);
+	width:100%;
+}
+
+.pro_svc2{
+	margin-top:0px;
+	height:calc(100vh - 50px);
+	width:100%;
+}
+
+
+
+/*.container_marketing_content{
+	font-family:'Montserrat', sans-serif;
+	width:65%;
+	margin:0px auto 0px auto;
+	padding:20px 0px 20px 0px;
+}
+
+.container_mktg_left{
+	position: relative;
+	float:left;
+	width:50%;
+	min-height:1px;
+}
+
+.container_mktg_right{
+	position: relative;
+	float:right;
+	width:50%;
+	min-height:1px;
+}
+
+.center{
+	text-align:center;
+}
+
+.container_marketing{
+	width:100%;
+	margin:auto;
+}*/
+
+.container{
+	padding:75px 0px 75px 0px;
+}
+
+
+.featurette-divider{
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+.footer_bg{
+	background:#323C44;
+}
+
+/*Custom Button*/
+.button_light {
+   border: 3px solid #FFFFFF;
+   padding: 10.5px 21px;
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+   color: #FFFFFF;
+   font-size: 20px;
+   font-family: inherit, sans-serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+   
+.button_dark {
+   border: 3px solid #0E1522;
+   padding: 10.5px 21px;
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+   color: #0E1522;
+   font-size: 20px;
+   font-family: inherit, sans-serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+   
+.button:hover {
+   border: 3px solid #21ce9a;
+   color: #21ce9a;
+   }
+.button:active {
+   border: 3px solid #21ce9a;
+   color: #21ce9a;
+   }
+.button:focus{
+   border: 3px solid #21ce9a;
+   color: #21ce9a;
+   text-decoration:none;
+   } 
+   
+a.button:hover{
+	text-decoration:none;
+}   
